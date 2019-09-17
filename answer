@@ -1,3 +1,16 @@
+HTTP/1.0 301 Moved Permanently
+Location: http://www.google.at/
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 17 Sep 2019 17:45:27 GMT
+Expires: Thu, 17 Oct 2019 17:45:27 GMT
+Cache-Control: public, max-age=2592000
+Server: gws
+Content-Length: 218
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+
+
+
 HTTP/1.0 200 OK
 Date: Tue, 17 Sep 2019 04:43:38 GMT
 Expires: -1
@@ -27,6 +40,30 @@ Cache-Control: max-age=0, no-cache, no-store, must-revalidate
 Pragma: no-cache
 Expires: Mon, 29 Oct 1923 20:30:00 GMT
 Content-Type: text/html; charset=UTF-8
+
+
+HTTP/1.0 200 OK
+Date: Tue, 17 Sep 2019 17:30:16 GMT
+Expires: -1
+Cache-Control: private, max-age=0
+Content-Type: text/html; charset=ISO-8859-1
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Server: gws
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: 1P_JAR=2019-09-17-17; expires=Thu, 17-Oct-2019 17:30:16 GMT; path=/; domain=.google.at; SameSite=none
+Set-Cookie: NID=188=xRcEKjC0V-jd66HwPFn9v5F101RH1YBkWdvwqMOmxLNWmnhLvcpRrSgqAG--vk6_QoyHwBaFmX00r8z6vbx92VVK6gc_s34d9E6o8tHF4g3WjAnhpA-7nezOOe_3LfYW2pN5PGUk4lWibNZRa9NL57qSoLLkVHFGLZOE_cIRbS0; expires=Wed, 18-Mar-2020 17:30:16 GMT; path=/; domain=.google.at; HttpOnly
+Accept-Ranges: none
+Vary: Accept-Encoding
+
+
+b'HTTP/1.0 200 OK\r\nDate: Tue, 17 Sep 2019 17:27:56 GMT\r\nExpires: -1\r\nCache-Control: private, max-age=0\r\nContent-Type: text/html; cha
+rset=ISO-8859-1\r\nP3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."\r\nServer: gws\r\nX-XSS-Protection: 0\r\nX-Frame-Opti
+ons: SAMEORIGIN\r\nSet-Cookie: 1P_JAR=2019-09-17-17; expires=Thu, 17-Oct-2019 17:27:56 GMT; path=/; domain=.google.at; SameSite=none\r\nSet-
+Cookie: NID=188=n3xth1mUiuQofg3rJQuhp_DbYzDiFvE675nINanoqyxqey0Mfl7q3WUMYQhMHOL1VlhHHVgtAhzaIumz2sjHxiMNUZN2FyCR2i0ecxDvzlkJMrRO1Fo1tszmWNih
+29Y8TWrpXyeGsN0qTaytsYK4-q5LIKB4ofWGM7dooQMPS1Q; expires=Wed, 18-Mar-2020 17:27:56 GMT; path=/; domain=.google.at; HttpOnly\r\nAccept-Ranges
+: none\r\nVary: Accept-Encoding'
+
 
 <!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="de-AT"><head><meta content="text/html; charset=UTF-8" http-equi
 v="Content-Type"><meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><title>Google</title><script
