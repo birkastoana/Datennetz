@@ -42,9 +42,10 @@ try:
     # Wir geben die Antwort aus
     # Um einen Byte-String in einen Unicode-String umzuwandeln, mÃ¼ssen wir decode() aufrufen
     # print(response.decode())
-    print(response)
+    requestStatus = re.match(response, "HTTP/\d\.\d (\d+)")
+    print(requestStatus)
 
-    print(re.match(response, "HTTP/(\d\.\d) (\d+) (\w+)\\r\\n.*Cache-Control:"))
+    # print(re.match(response, "HTTP/(\d\.\d) (\d+) (\w+)\\r\\n.*Cache-Control:"))
 
     # Nicht vergessen alle Ressourcen wieder zu schlieÃŸen
     sock.close()

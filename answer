@@ -1,0 +1,108 @@
+HTTP/1.0 200 OK
+Date: Tue, 17 Sep 2019 04:43:38 GMT
+Expires: -1
+Cache-Control: private, max-age=0
+Content-Type: text/html; charset=ISO-8859-1
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Server: gws
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: 1P_JAR=2019-09-17-04; expires=Thu, 17-Oct-2019 04:43:38 GMT; path=/; domain=.google.at; SameSite=none
+Set-Cookie: NID=188=CZVBNnmiTmp6nDccHRnWshu9JJww5bP2hYd4BF9SHPNgK0WT-gkuUSpvsgtAqOyVqLvjEdgQgeRlUZa5muJObR36xanTEHpbKWkdRY_YM2QiRMoImk-3u2cZ
+gn9uJLTFwJeCg1BSKaYL9_kqlhealpB6sb3y-cuuYpYQGWhdrvo; expires=Wed, 18-Mar-2020 04:43:38 GMT; path=/; domain=.google.at; HttpOnly
+Accept-Ranges: none
+Vary: Accept-Encoding
+
+
+HTTP/1.1 200 OK
+Date: Tue, 17 Sep 2019 04:50:49 GMT
+Server: Apache/2.4.39
+Upgrade: h2c
+Connection: Upgrade, close
+Last-Modified: Sun, 07 Apr 2019 11:10:13 GMT
+Accept-Ranges: bytes
+Content-Length: 107393
+Vary: Accept-Encoding
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: Mon, 29 Oct 1923 20:30:00 GMT
+Content-Type: text/html; charset=UTF-8
+
+<!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="de-AT"><head><meta content="text/html; charset=UTF-8" http-equi
+v="Content-Type"><meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><title>Google</title><script
+nonce="xXwSk7r0t9XXxtdfh5EP3w==">(function(){window.google={kEI:'emSAXfmGHu6jrgTSvY7YDg',kEXPI:'0,1353747,3656,2006,730,224,510,246,819,3151
+,378,207,1017,54,1430,454,123,2,124,10,272,441,227,111,539,243,138,2329480,329476,1294,12383,4855,32692,15247,867,12163,5281,11240,369,8819,
+2436,3929,2019,1119,2,578,728,2432,1361,283,4040,4967,774,2249,4745,9314,669,1050,1808,1478,7,491,2044,8909,5297,2016,38,920,873,262,2,953,1
+364,1611,2736,3061,2,631,1137,1266,837,414,7654,2882,16,321,1118,902,104,2024,1,369,2777,520,399,992,509,776,8,109,2687,814,153,48,553,11,16
+,665,612,2212,202,168,155,5,68,1184,327,513,324,193,1466,8,48,157,3283,818,109,151,52,1137,2,2063,606,1839,185,545,49,82,1100,520,360,1587,7
+47,61,255,113,44,1102,328,1284,16,84,336,81,507,1919,1428,818,474,134,326,879,729,501,557,669,2425,133,520,188,65,181,848,519,524,7,504,224,
+592,523,1051,188,1039,374,228,507,369,269,1768,341,367,58,332,625,4037,9,25,52,612,44,8,112,2,274,688,34,59,469,651,208,90,503,53,80,157,291
+,170,59,243,588,55,442,312,213,619,498,60,1279,773,21,1441,456,5891801,12,6000358,95,188,2799686,4,1572,549,333,444,1,2,80,1,900,583,7,306,1
+,8,1,2,2132,1,1,1,1,1,414,1,889,59,726,3,7,2,561,1,3653,134,4,1,73,42,1,1,19,20746055,3220021',authuser:0,kscs:'c9c918f0_emSAXfmGHu6jrgTSvY7
+YDg',kGL:'AT',kBL:'SbIL'};google.sn='webhp';google.kHL='de-AT';google.jsfs='Ffpdje';})();(function(){google.lc=[];google.li=0;google.getEI=f
+unction(a){for(var b;a&&(!a.getAttribute||!(b=a.getAttribute("eid")));)a=a.parentNode;return b||google.kEI};google.getLEI=function(a){for(va
+r b=null;a&&(!a.getAttribute||!(b=a.getAttribute("leid")));)a=a.parentNode;return b};google.https=function(){return"https:"==window.location
+.protocol};google.ml=function(){return null};google.time=function(){return(new Date).getTime()};google.log=function(a,b,e,c,g){if(a=google.l
+ogUrl(a,b,e,c,g)){b=new Image;var d=google.lc,f=google.li;d[f]=b;b.onerror=b.onload=b.onabort=function(){delete d[f]};google.vel&&google.vel
+.lu&&google.vel.lu(a);b.src=a;google.li=f+1}};google.logUrl=function(a,b,e,c,g){var d="",f=google.ls||"";e||-1!=b.search("&ei=")||(d="&ei="+
+google.getEI(c),-1==b.search("&lei=")&&(c=google.getLEI(c))&&(d+="&lei="+c));c="";!e&&google.cshid&&-1==b.search("&cshid=")&&"slh"!=a&&(c="&
+cshid="+google.cshid);a=e||"/"+(g||"gen_204")+"?atyp=i&ct="+a+"&cad="+b+d+f+"&zx="+google.time()+c;/^http:/i.test(a)&&google.https()&&(googl
+e.ml(Error("a"),!1,{src:a,glmm:1}),a="");return a};}).call(this);(function(){google.y={};google.x=function(a,b){if(a)var c=a.id;else{do c=Ma
+th.random();while(google.y[c])}google.y[c]=[a,b];return!1};google.lm=[];google.plm=function(a){google.lm.push.apply(google.lm,a)};google.lq=
+[];google.load=function(a,b,c){google.lq.push([[a],b,c])};google.loadAll=function(a,b){google.lq.push([a,b])};}).call(this);google.f={};var
+a=window.location,b=a.href.indexOf("#");if(0<=b){var c=a.href.substring(b+1);/(^|&)q=/.test(c)&&-1==c.indexOf("#")&&a.replace("/search?"+c.r
+eplace(/(^|&)fp=[^&]*/g,"")+"&cad=h")};</script><style>#gb{font:13px/27px Arial,sans-serif;height:30px}#gbz,#gbg{positi
+
+
+
+
+<!-- new request-->
+
+
+
+<!DOCTYPE html>
+<html lang="de-DE" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://www.gaestehaus-sonnenbichl.de/xmlrpc.php" />
+<link rel="icon" href="http://www.gaestehaus-sonnenbichl.de/wp-content/uploads/2017/05/cropped-logo-Gaestehaus-Sonnenbichl-Quadr-32x32.jpg"
+sizes="32x32" />
+<link rel="icon" href="http://www.gaestehaus-sonnenbichl.de/wp-content/uploads/2017/05/cropped-logo-Gaestehaus-Sonnenbichl-Quadr-192x192.jpg
+" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://www.gaestehaus-sonnenbichl.de/wp-content/uploads/2017/05/cropped-logo-Gaestehaus-Sonne
+nbichl-Quadr-180x180.jpg" />
+<meta name="msapplication-TileImage" content="http://www.gaestehaus-sonnenbichl.de/wp-content/uploads/2017/05/cropped-logo-Gaestehaus-Sonnen
+bichl-Quadr-270x270.jpg" />
+<title>Grüß Gott in Ihrem Gästehaus Sonnenbichl in Fischbachau</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<!-- This site is optimized with the Yoast SEO plugin v9.6 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Wir laden Sie ein – genießen Sie gesellige Stunden in familiärer Atmosphäre oder einfach die Ruhe des Vora
+lpenlandes in Ihrem Gästehaus Sonnenbichl."/>
+<link rel="canonical" href="http://www.gaestehaus-sonnenbichl.de/" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Grüß Gott in Ihrem Gästehaus Sonnenbichl in Fischbachau" />
+<meta property="og:description" content="Wir laden Sie ein – genießen Sie gesellige Stunden in familiärer Atmosphäre oder einfach die Ruhe d
+es Voralpenlandes in Ihrem Gästehaus Sonnenbichl." />
+<meta property="og:url" content="http://www.gaestehaus-sonnenbichl.de/" />
+<meta property="og:site_name" content="Gästehaus Sonnenbichl Fischbachau" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Wir laden Sie ein – genießen Sie gesellige Stunden in familiärer Atmosphäre oder einfach die Ruhe
+des Voralpenlandes in Ihrem Gästehaus Sonnenbichl." />
+<meta name="twitter:title" content="Grüß Gott in Ihrem Gästehaus Sonnenbichl in Fischbachau" />
+<script type='application/ld+json'>{"@context":"https://schema.org","@type":"WebSite","@id":"http://www.gaestehaus-sonnenbichl.de/#website",
+"url":"http://www.gaestehaus-sonnenbichl.de/","name":"G\u00e4stehaus Sonnenbichl Fischbachau","potentialAction":{"@type":"SearchAction","tar
+get":"http://www.gaestehaus-sonnenbichl.de/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- / Yoast SEO plugin. -->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Gästehaus Sonnenbichl Fischbachau &raquo; Feed" href="http://www.gaestehaus-sonnenbi
+chl.de/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Gästehaus Sonnenbichl Fischbachau &raquo; Kommentar-Feed" href="http://www.gaestehau
+s-sonnenbichl.de/comments/feed/" />
+<meta property="og:title" content="Grüß Gott in Ihrem Gästehaus Sonnenbichl in FischbachauGästehaus Sonnenbichl Fischbachau" /><meta propert
+y="og:type" content="article" /><meta property="og:image" content="http://www.gaestehaus-sonnenbichl.de/wp-content/uploads/2017/05/logotrans
+parent-klein.png" /><meta property="og:url" content="http://www.gaestehaus-sonnenbichl.de/" /><meta name="generato
+
