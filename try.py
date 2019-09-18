@@ -1,77 +1,52 @@
 #!/usr/bin/python3
-
-
-# Um Sockets verwenden zu kÃ¶nnen, mÃ¼ssen wir das socket Modul importieren
 import socket
 import sys
 from urllib.parse import urlparse
 import re
-
-
-
-
 try:
-    if  len(sys.argv) != 3 :
+    if len(sys.argv) != 3:
         print(sys.argv)
         raise Exception("Invalid number of Arguments")
-
     urlElements = urlparse(sys.argv[1])
-    print ("urlelements: " ,  urlElements)
-
-    # verwende die variablen, weil die urlElements spaeter ggf ueberschrieben werden!
     path = urlElements[2]
     params = urlElements[3]
     query = urlElements[4]
-
     loopFlag = 1
     while loopFlag:
-
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.connect((urlElements[1], 80))
-        print("++++++++++++++++++++++")
-        print(urlElements[1])
-        print("++++++++++++++++++++++")
-
-        requestString = 'GET '  + path
-        if len(query) != 0: requestString = requestString + '?' + query
-        requestString = requestString + " HTTP/1.1\r\nHost: " + urlElements[1] +"\r\n\r\n"
-
-        print("~~~~~~~~~~~~~~~")
-        print('requeststring ', requestString.encode("utf-8"))
-
-        print("~~~~~~~~~~~~~~~")
+        requestString = 'GET ' + urlElements[2]
+        if len(urlElements[2]) == 0: requestString = requestString + "/"
+        if len(urlElements[4]) != 0: requestString = requestString + '?' + query
+        requestString = requestString + " HTTP/1.1\r\nHost: " + urlElements[1] + "\r\n\r\n"
         sock.send(requestString.encode("utf-8"))
         response = sock.recv(4048)
-
         response = response.split(b"\r\n\r\n")
         head = response[0]
         body = response[1]
-        print(head)
-
+        body = body.split(b'\r\n')
+        bodySize = body[0]
+        body = body[len(body)-1]
         requestStatus = re.match(b"HTTP/\d*\.\d* (\d+)", head)
         statusCode = requestStatus[1].decode()
-
         if statusCode == "200":
-            print("********** entered status 200 ***********")
+            print("request successfull! Save body to ", sys.argv[2])
+            n = 0
+            fobj = open(sys.argv[2], 'w+b')
+            while body != b'':
+                fobj.write(body)
+                n += 1
+                body = sock.recv(4048)
+            fobj.close()
             loopFlag = 0
         elif statusCode[0] == "3":
-            print(statusCode[0])
-            print("********** entered status 3xx ***********")
-            newAdress = re.match(".*\sLocation: (.*)\s.*", head.decode())
-            urlElements = urlparse(newAdress[1])
+            newAdress = re.search(b".*Location: (.*)\r", head)
+            urlElements = urlparse(newAdress[1].decode())
         elif statusCode[0] == "4" or statusCode[0] == "5":
-            print("********** entered error  ***********")
             error = re.match("HTTP/\d.\d (.*)\s.*", head.decode())
             print(error[1])
             raise Exception(error[1] + requestString)
-
-
-
-
-
         sock.close()
-
-
 
 except:
     print("Ein Fehler ist aufgetreten")
