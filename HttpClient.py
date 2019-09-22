@@ -3,6 +3,7 @@ import socket
 import sys
 from urllib.parse import urlparse
 import re
+socket.setdefaulttimeout(10)
 try:
     if len(sys.argv) != 3:
         print(sys.argv)
@@ -23,8 +24,7 @@ try:
         response = sock.recv(4048)
         response = response.split(b"\r\n\r\n")
         head = response[0]
-        body = response[1]
-        body = body.split(b'\r\n')
+        body = response[1].split(b'\r\n')
         bodySize = body[0]
         body = body[len(body)-1]
         requestStatus = re.match(b"HTTP/\d*\.\d* (\d+)", head)
@@ -33,10 +33,17 @@ try:
             print("request successfull! Save body to ", sys.argv[2])
             n = 0
             fobj = open(sys.argv[2], 'w+b')
+#             Die Loesung hier mache ich, weil ich es nicht geschafft habe, die content length
+#             richtig zu interpretieren, wenn die am Anfang des headers steht.
+#             Die Werte passen dann nicht mit den Groeßen der receives aus dem socket zusammen.
+#             Die Loesung hätte also bpsw mit dem Bild funktioniert, weil dort die Content-Length im
+#             Header steht. Allerdings nicht mit dem Aufruf von seiten wie google.com
+
             while body != b'':
                 fobj.write(body)
                 n += 1
-                body = sock.recv(4048)
+                body = sock.recv(2096)
+                print(n)
             fobj.close()
             loopFlag = 0
         elif statusCode[0] == "3":
