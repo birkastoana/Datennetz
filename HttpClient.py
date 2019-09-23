@@ -19,11 +19,12 @@ try:
         requestString = 'GET ' + urlElements[2]
         if len(urlElements[2]) == 0: requestString = requestString + "/"
         if len(urlElements[4]) != 0: requestString = requestString + '?' + query
-        requestString = requestString + " HTTP/1.1\r\nHost: " + urlElements[1] + "\r\n\r\n"
+        requestString = requestString + " HTTP/1.1\r\nHost: " + urlElements[1] + "\r\nConnection: close"+ "\r\n\r\n"
         sock.send(requestString.encode("utf-8"))
         response = sock.recv(4048)
         response = response.split(b"\r\n\r\n")
         head = response[0]
+        print(head.decode())
         body = response[1].split(b'\r\n')
         bodySize = body[0]
         body = body[len(body)-1]
@@ -43,7 +44,7 @@ try:
                 fobj.write(body)
                 n += 1
                 body = sock.recv(2096)
-                print(n)
+
             fobj.close()
             loopFlag = 0
         elif statusCode[0] == "3":
