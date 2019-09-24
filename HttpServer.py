@@ -75,6 +75,7 @@ try:
         print(sys.argv)
         raise Exception("Invalid number of Arguments")
     root = sys.argv[1] + "/responses"
+    print(root)
     if not os.path.exists(root + "/404.html"):
         raise Exception("Path deoes not exist!")
 
