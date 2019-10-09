@@ -66,8 +66,8 @@ def socketThread(function):
         sock.close()
 
 
+
 # Entry Point
-signal(SIGINT, handler)
 try:
     if sendDiscoverUDP() == None:
         raise Exception("Get no connection to server!")
